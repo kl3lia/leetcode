@@ -1,6 +1,5 @@
 def two_sum(nums, target):
     """
-
     :param nums: List[int]
     :param target:  int
     :return: List[int]

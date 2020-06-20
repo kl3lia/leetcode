@@ -5,7 +5,7 @@ def subarraySum(nums, k):
     :return: int
     """
     sum_map = {}
-    sum_map[0] = 1
+    sum_map[0] = 1 #special case
     count = curr_sum = 0
     for num in nums:
         curr_sum += num
@@ -19,5 +19,8 @@ def subarraySum(nums, k):
 
 
 if __name__ == '__main__':
-    print(subarraySum([3, 4, 7, 2, -3, 1, 4, 2], 7))
-    print(subarraySum([1], 0))
+    #print(subarraySum([3, 4, 7, 2, -3, 1, 4, 2], 7))
+    #print(subarraySum([1], 0))
+    #print(subarraySum([1, 0, 2, 4], 6)) #sum-k e.g 7-6=1, counted twice
+    print(subarraySum([0, 0, 0], 0))
+
