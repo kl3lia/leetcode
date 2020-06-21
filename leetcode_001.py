@@ -9,7 +9,7 @@ def two_sum(nums, target):
 
         if target - num in store:
 
-            return [ store.get(target - num), idx]
+            return [store.get(target - num), idx]
         else:
             store[num] = idx
     return []
