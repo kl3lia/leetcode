@@ -15,9 +15,9 @@ def three_sum_brute_force(nums):
 
 def three_sum_hash(nums):
     """
-    ??? WHY DOES NOT WORKK!?
+    Note: elements are not considered distinct in this approach
     :param nums:
-    :return:
+    :return: list
     """
     counter = collections.Counter(nums)
     store = set()
@@ -38,6 +38,12 @@ def three_sum_hash(nums):
 
 
 def threeSum(self, nums):
+    """
+
+    :param self:
+    :param nums:
+    :return: list
+    """
     res = []
     nums.sort()
     ls = len(nums)
