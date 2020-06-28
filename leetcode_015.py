@@ -56,9 +56,9 @@ def threeSum(self, nums):
             curr = nums[i] + nums[j] + nums[k]
             if curr == 0:
                 res.append([nums[i], nums[j], nums[k]])
-                while j < k and nums[j] == nums[j + 1]:
+                while j < k and nums[j] == nums[j + 1]: #avoid duplicate 3sums
                     j += 1
-                while j < k and nums[k] == nums[k - 1]:
+                while j < k and nums[k] == nums[k - 1]:#avoid duplicate 3sums
                     k -= 1
                 j += 1
                 k -= 1
